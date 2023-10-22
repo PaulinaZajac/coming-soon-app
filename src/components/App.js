@@ -32,6 +32,11 @@ function App() {
         <img src={desktopImage} alt="desktop" className="desktop-image"></img>
       </main>
       <footer className="page-footer">
+        <div className="icons-container">
+          <i class="fa-brands fa-facebook fa-lg"></i>
+          <i class="fa-brands fa-twitter fa-lg"></i>
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </div>
         © Copyright Ping. All rights reserved.
       </footer>
     </div>

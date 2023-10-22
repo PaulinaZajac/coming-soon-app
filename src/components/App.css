@@ -28,9 +28,7 @@ h4 {
 footer {
   font-weight: 300;
   font-size: 0.8rem;
-  padding-top: 20%;
   color: #969696;
-  max-height: 10vh;
 }
 
 .desktop-image {
@@ -56,6 +54,12 @@ footer {
   min-height: 4vh;
 }
 
+input::placeholder {
+  color: #969696;
+  padding-left: 10%;
+  opacity: 0.5;
+}
+
 .button {
   background-color: #4c7bf3;
   border: 0.3px solid #4c7bf3;
@@ -63,4 +67,19 @@ footer {
   color: white;
   height: 4.5vh;
   width: 80vw;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+  padding: 30% 0 5% 30%;
+}
+
+i {
+  width: 5vw;
+  height: 4vh;
+  color: #4c7bf3;
+  /* border: 1px solid #4c7bf3;
+  border-radius: 50%; */
 }
