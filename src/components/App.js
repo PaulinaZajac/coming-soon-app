@@ -1,17 +1,35 @@
 import '../components/App.css';
 import pingLogo from '../images/logo.svg';
+import desktopImage from '../images/illustration-dashboard.png';
 
 function App() {
   return (
     <div className="page-container">
       <header className="page-header">
-        <img src={pingLogo} alt="ping-logo"></img>
-        <h2>We are launching soon!</h2>
+        <img src={pingLogo} alt="ping-logo" className="logo"></img>
+        <h2>
+          We are launching <b>soon!</b>
+        </h2>
       </header>
       <main>
-        <h3>Subscribe and get notified</h3>
-        <input className="input"></input>
-        <button className="button">Notify me</button>
+        <div className="input-container">
+          <div>
+            <label for="email">Subscribe and get notified</label>
+          </div>
+          <div>
+            <input
+              type="email"
+              className="input"
+              id="email"
+              placeholder="Your email adress..."
+              required
+            ></input>
+          </div>
+          <div>
+            <button className="button">Notify me</button>
+          </div>
+        </div>
+        <img src={desktopImage} alt="desktop" className="desktop-image"></img>
       </main>
       <footer className="page-footer">
         © Copyright Ping. All rights reserved.
